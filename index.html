@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Enter Title of HW Here</title>
-</head>
-<body>
-  <!-- Enter HTML here. -->
 
-  <script src="scripts.js"></script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <form action="#">
+        <label for="num-1">Enter the first number</label>
+        <input type="number" id="num-1" />
+        <label for="num-2">Enter the second number</label>
+        <input type="number" id="num-2" />
+        <label for="operation">Select the type of operation</label>
+        <select id="operation">
+        <option value="add">add</option>
+        <option value="subtract">subtract</option>
+        <option value="multiply">multiply</option>
+        <option value="divide">divide</option>
+        <option value="remainder">remainder</option>
+      </select>
+        <input type="submit" value="Do Math" />
+        <output></output>
+    </form>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
