@@ -50,9 +50,9 @@ form.addEventListener("submit", function(event) {
    * Get the values form the input fields. Pass the arguements to the function. Display results.
    */
 
-  console.log(add(num1.value, num2.value));
+  // console.log(add(num1.value, num2.value));
 
-  output.textContent = add(num1.value, num2.value);
+  // output.textContent = add(num1.value, num2.value);
 
   // Form inputs have a property called values.
   //To get the values of form fields...use below
