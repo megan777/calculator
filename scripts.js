@@ -7,31 +7,31 @@
 
 
 
- const calc = {
-   add: function add(a, b){
-     return Number(a) + Number(b);
- },
+const calc = {
+add: function add(a, b){
+return Number(a) + Number(b);
+},
 
- const calc = {
-  add: function add(a, b){
+const calc = {
+  add(a, b){
     return Number(a) + Number(b);
 },
-subtract:function subtract(a, b) {
+subtract(a, b) {
     return a - b;
 },
 
-multiply:function multiply(a, b) {
+multiply(a, b) {
   return a * b;
 },
 
-divide: function divide(a, b) {
+divide(a, b) {
   return a / b;
 },
 
-remainder: function remainder(a, b) {
+remainder(a, b) {
   return a % b;
 }
- }
+}
 
 const form = document.querySelector("form");
 const num1 = document.querySelector("#num-1");
