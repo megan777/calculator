@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Calculator</title>
+    <!-- <link rel="stylesheet" href=".css" type="text/css" /> -->
+    <title>Final Project</title>
 </head>
 
 <body>
@@ -25,6 +27,208 @@
         <input type="submit" value="Do Math" />
         <output></output>
     </form>
+
+    <h1>Tile Estimate Helper</h1>
+    <p>
+        <form name="form2" method="get" onSubmit="return checkForm(this)">
+            <div>
+                <table width="450px">
+                    <!-- name -->
+                    <tr>
+                        <td valign="top">
+                            <label for="name">Name</label>
+                        </td>
+                        <td valign="top">
+                            <input type="text" name="name" maxlength="50" size="30">
+                        </td>
+                    </tr>
+                    <!-- Street -->
+                    <tr>
+                        <td valign="top">
+                            <label for="street">Street</label>
+                        </td>
+                        <td valign="top">
+                            <input type="text" name="street" maxlength="80" size="30">
+                        </td>
+                    </tr>
+                    <!-- City -->
+                    <tr>
+                        <td valign="top">
+                            <label for="city">City</label>
+                        </td>
+                        <td valign="top">
+                            <input type="text" name="city" maxlength="30" size="30">
+                        </td>
+                    </tr>
+                    <!-- Phone -->
+                    <tr>
+                        <td valign="top">
+                            <label for="phone">Phone Number</label>
+                        </td>
+                        <td valign="top">
+                            <input type="text" onkeypress="return isNumberKey(event)" name="phone" maxlength="30" size="30">
+                        </td>
+                    </tr>
+                    <!-- completion date -->
+                    <tr>
+                        <td>Requested Completion Date</td>
+                        <td>
+                            <input type="text" name="complete" maxlength="30" size="30">
+                        </td>
+                    </tr>
+                    <!-- Comments -->
+                    <tr>
+                        <td valign="top">
+                            <label for="comments">Comments</label>
+                        </td>
+                        <td valign="top">
+                            <textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 	  Preparation -->
+            <fieldset>
+                <legend>Preparation</legend>
+                <!-- 	  	trash -->
+                <ul>
+                    1.) Are you responsible for removing old flooring and disposing of the materials? (added $3 p/sqft)
+                    <input type="checkbox" name="trashY" />yes
+                    <input type="checkbox" name="trashN" />no
+                </ul>
+                <!-- 		subfloor -->
+                <ul>
+                    2.) Will the subfloor need to be replaced? (additional $5 p/sqft)
+                    <input type="checkbox" name="subY" />yes
+                    <input type="checkbox" name="subN" />no
+                </ul>
+                <!-- 		backerboard -->
+                <ul>
+                    3.) Do you need to install backerboard? (additional $1 p/sqft)
+                    <input type="checkbox" name="backerY" />yes
+                    <input type="checkbox" name="backerN" />no
+                </ul>
+                <!-- 		material -->
+                <ul>
+                    4.) Will you be supplying the material?
+                    <input type="checkbox" name="materialY" />yes
+                    <input type="checkbox" name="materialN" />no
+                </ul>
+                <table>
+                    <ul>
+                        <td valign="top">Materials needed</td>
+                        <td valign="top"><textarea name="materialList" maxlength="1000" cols="25" rows="6"></textarea></td>
+                    </ul>
+                </table>
+            </fieldset>
+
+            <!--	 layout	 -->
+            <fieldset>
+                <legend>Layout</legend>
+                <!-- 		backsplash -->
+                <ul>
+                    <label for="backsplash">
+            <input type="radio" id="backsplash" name="layout" value="backsplash" />
+            Backsplash ($200 minimum)
+          </label>
+                </ul>
+                <!-- 	  subway -->
+                <ul>
+                    <label for="subway">
+            <input type="radio" id="subway" name="layout" value="subway" />
+            Subway
+          </label>
+                </ul>
+                <!-- 	  degree -->
+                <ul>
+                    <label for="degree">
+            <input type="radio" id="degree" name="layout" value="degree" />
+            45 Degree Angle
+          </label>
+                </ul>
+                <!-- 		herringbone -->
+                <ul>
+                    <label for="herringbone">
+            <input type="radio" id="herringbone" name="layout" value="herringbone" />
+            Herringbone
+          </label>
+                </ul>
+                <!-- 		basketweave -->
+                <ul>
+                    <label for="basketweave">
+            <input type="radio" id="basketweave" name="layout" value="basketweave" />
+            Basket Weave
+          </label>
+                </ul>
+                <!-- 	  crosshatch -->
+                <ul>
+                    <label for="crosshatch">
+            <input type="radio" id="crosshatch" name="layout" value="crosshatch" />
+            Crosshatch
+          </label>
+                </ul>
+                <!-- 	  straight -->
+                <ul>
+                    <label for="straight">
+            <input type="radio" id="straight" name="layout" value="straight" />
+            Straight Lay
+          </label>
+                </ul>
+            </fieldset>
+
+            <!--	 measurements	 -->
+            <fieldset>
+                <legend>Measurements</legend>
+                <table>
+                    <tr>
+                        <td>Area Length</td>
+                        <td><input type="text" id="length" onkeypress="return isNumberKey(event)" maxlength="80" size="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Area Width</td>
+                        <td><input type="text" id="width" onkeypress="return isNumberKey(event)" maxlength="80" size="10"></td>
+                    </tr>
+
+                </table>
+            </fieldset>
+
+
+            <!--	 cost	 -->
+            <fieldset>
+                <legend>Cost</legend>
+                <table>
+                    <tr>
+                        <td>Base Price Per Sq Ft</td>
+                        <td><input type=text value="5" name="pricePer" size=5; readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Preparation Charge Per Sq Ft</td>
+                        <td><input type=text value="0" name="options" size=5; readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Total Charge Per Sq Ft</td>
+                        <td><input type=text value="0" name="ttlPerFt" size=5; readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Square Footage</td>
+                        <td><input type="text" value="0" id="TTLsqft" name="TTLsqft" size="5" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Total Estimated Cost</td>
+                        <td><input type=text value="0" name="total" size=5;></td>
+                    </tr>
+                </table>
+            </fieldset>
+    </p>
+
+    <input type="button" onclick="return myFunctions(this.form)" value="Calculate Order Total">
+    <input type="reset" value="Clear Order" />
+
+    </form>
+
+
     <script src="scripts.js"></script>
 </body>
 
