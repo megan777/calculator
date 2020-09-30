@@ -1,0 +1,47 @@
+/*
+ *
+ *Calculator App
+ *
+ */
+
+body {
+    color: black;
+    background-color: whitesmoke;
+    font-family: 'Aleo';
+    font-size: 24px;
+}
+
+html {
+    --primary: #e1f8fc;
+    /*pale blue*/
+    --primary-variant: #7de5fa;
+    /*sky*/
+    --secondary: #a9a9a9;
+    /*gray*/
+    --secondary-variant: #d3d3d3;
+    /*light gray*/
+    --base-spacing: 8px;
+    align-items: center;
+    background: url(flatBlk.jpg) no-repeat top center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    padding: 5rem;
+}
+
+li {
+    line-height: 40px;
+    list-style-type: none;
+}
+
+.btn {
+    background-color: var(--secondary);
+    border-radius: var(--base-spacing);
+    box-shadow: 1px 1px 1px black;
+    padding: var(--base-spacing);
+    text-transform: uppercase;
+}
