@@ -31,12 +31,10 @@ const output = document.querySelector("output");
 
 //Use an anonymous callback function as the 2nd argument.
 form.addEventListener("submit", function(event) {
-    // Prevent the default browser behavior - DON'T SUBMIT
-    event.preventDefault();
-
-    // Form inputs have a property called values.
-    //To get the values of form fields...use below
-    //console.log(num1.value, num2.value, select.value);
-
     output.textContent = calculator[select.value](num1.value, num2.value);
+});
+
+//Use an anonymous callback function as the 2nd argument.
+form.addEventListener("reset", function(event) {
+    output.textContent = " ";
 });
