@@ -23,8 +23,6 @@ const calculator = {
 
 };
 
-//console.log(calculator.add(1, 2));
-
 const form = document.querySelector("form");
 const num1 = document.querySelector("#num-1");
 const num2 = document.querySelector("#num-2");
