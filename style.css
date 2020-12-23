@@ -5,32 +5,63 @@
  */
 
 body {
-    color: black;
-    background-color: whitesmoke;
+    /* color: black; */
+    /* background-color: rgb(235, 177, 215); */
     font-family: 'Aleo';
     font-size: 24px;
+    /* background: url(flatBlk.jpg) no-repeat top center; */
+    /* background: rgba( 255, 255, 255, 0.20);
+    /*color,color,color, transparency*/
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px; */
 }
 
-html {
-    --primary: #e1f8fc;
-    /*pale blue*/
-    --primary-variant: #7de5fa;
-    /*sky*/
-    --secondary: #a9a9a9;
-    /*gray*/
-    --secondary-variant: #d3d3d3;
-    /*light gray*/
-    --base-spacing: 8px;
-    align-items: center;
-    background: url(flatBlk.jpg) no-repeat top center;
-    background-size: cover;
+
+/* header {
     display: flex;
     justify-content: center;
+    text-align: left; }*/
+
+html {
+    /* --primary:  ;
+    --primary-variant: red;
+    --secondary: #;
+    --secondary-variant: #;*/
+    --base-spacing: 20px;
+    /* background: url(flatBlk.jpg) no-repeat top center; */
+    /* background-size: cover;*/
+    /* display: flex;*/
+    justify-content: center;
     text-align: center;
+    align-items: center;
+    background: rgb(206, 6, 233);
+    background: linear-gradient( to bottom, rgb(45, 15, 153), rgb(230, 20, 178));
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    /* background-color: DodgerBlue; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 form {
-    padding: 5rem;
+    /* padding: 5rem; */
+    background: rgba(255, 255, 255, 0.315);
+    /*color,color,color, transparency*/
+    box-shadow: 0 5px 32px 0 rgb(0, 0, 0);
+    backdrop-filter: blur( 10px);
+    /*blur*/
+    -webkit-backdrop-filter: blur( 10px);
+    /*blur*/
+    border-radius: 10px;
 }
 
 li {
@@ -39,9 +70,23 @@ li {
 }
 
 .btn {
-    background-color: var(--secondary);
+    /*background-color: var(--primary-variant);*/
     border-radius: var(--base-spacing);
     box-shadow: 1px 1px 1px black;
     padding: var(--base-spacing);
     text-transform: uppercase;
+}
+
+.small {
+    padding: 5rem;
+    background: rgb(255, 255, 255, .5);
+    /*color,color,color, transparency*/
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.096);
+    backdrop-filter: blur( 20px);
+    -webkit-backdrop-filter: blur( 20px);
+    border-radius: 10px;
+    /* display: flex; */
+    /* justify-content: left; */
+    text-align: center;
+    margin-inline: 20px;
 }
