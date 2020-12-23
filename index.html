@@ -9,28 +9,49 @@
     <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
     <title>Simple Calculator</title>
 </head>
+<div>Background</div>
 
 <body>
-    <header>
-        <h1>Simple Calculator</h1>
-    </header>
-    <form action="#">
-        <li><label for="num-1">Enter the first number</label>
-            <input type="text" id="num-1" /></li>
-        <li><label for="num-2">Enter the second number</label>
-            <input type="text" id="num-2" /></li>
-        <li><label for="operation">Select the type of operation</label>
-            <select id="operation">
+    <div class="flex-container">
+        <form action="#">
+            <header>
+                <h1>Simple Calculator</h1>
+            </header>
+            <li><label for="num-1">Enter the first number</label>
+                <input type="text" id="num-1" /></li>
+            <li><label for="num-2">Enter the second number</label>
+                <input type="text" id="num-2" /></li>
+            <li><label for="operation">Select the type of operation</label>
+                <select id="operation">
                 <option value="add">add</option>
                 <option value="subtract">subtract</option>
                 <option value="multiply">multiply</option>
                 <option value="divide">divide</option>
             </select></li>
-        <li><input type="submit" class="btn" value="Do Math" />
-            <input type="reset" class="btn" value="Reset" /></li>
-        <li><output name="output" class="output"></output></li>
-    </form>
-    <script src="scripts.js"></script>
+            <li><input type="submit" class="btn" value="Do Math" />
+                <input type="reset" class="btn" value="Reset" /></li>
+            <li><output name="output" class="output"></output></li>
+
+            <div>
+                <li>small box</li>
+            </div>
+        </form>
+    </div>
+
+    <li>first small box</li>
+
+    <div class="flex-container">
+        <div class="small">
+            <li>small box</li>
+        </div>
+        <div class="small">
+            <li>small box</li>
+        </div>
+        <div class="small">
+            <li>small box</li>
+        </div>
+
+        <script src="scripts.js"></script>
 </body>
 
 </html>
