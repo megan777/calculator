@@ -5,39 +5,14 @@
  */
 
 body {
-    /* color: black; */
-    /* background-color: rgb(235, 177, 215); */
+    color: rgb(53, 49, 49);
     font-family: 'Aleo';
     font-size: 24px;
-    /* background: url(flatBlk.jpg) no-repeat top center; */
-    /* background: rgba( 255, 255, 255, 0.20);
-    /*color,color,color, transparency*/
-    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
-    backdrop-filter: blur( 4px);
-    -webkit-backdrop-filter: blur( 4px);
-    border-radius: 10px; */
 }
 
-
-/* header {
-    display: flex;
-    justify-content: center;
-    text-align: left; }*/
-
 html {
-    /* --primary:  ;
-    --primary-variant: red;
-    --secondary: #;
-    --secondary-variant: #;*/
     --base-spacing: 20px;
-    /* background: url(flatBlk.jpg) no-repeat top center; */
-    /* background-size: cover;*/
-    /* display: flex;*/
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background: rgb(206, 6, 233);
-    background: linear-gradient( to bottom, rgb(45, 15, 153), rgb(230, 20, 178));
+    background: url(foxi_calc.png) no-repeat top center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -46,47 +21,33 @@ html {
 
 .flex-container {
     display: flex;
-    /* background-color: DodgerBlue; */
-    justify-content: center;
     text-align: center;
-    align-items: center;
 }
 
 form {
-    /* padding: 5rem; */
+    padding: 2rem;
+    /* add space around text within the flexbox */
     background: rgba(255, 255, 255, 0.315);
     /*color,color,color, transparency*/
-    box-shadow: 0 5px 32px 0 rgb(0, 0, 0);
     backdrop-filter: blur( 10px);
     /*blur*/
     -webkit-backdrop-filter: blur( 10px);
     /*blur*/
     border-radius: 10px;
+    box-shadow: 0 5px 32px 0 rgb(0, 0, 0);
+    justify-content: center;
+    margin-left: 32rem;
+    margin-top: 12rem;
 }
 
 li {
     line-height: 40px;
+    /*extra space around lines of text*/
     list-style-type: none;
 }
 
 .btn {
-    /*background-color: var(--primary-variant);*/
     border-radius: var(--base-spacing);
     box-shadow: 1px 1px 1px black;
     padding: var(--base-spacing);
-    text-transform: uppercase;
-}
-
-.small {
-    padding: 5rem;
-    background: rgb(255, 255, 255, .5);
-    /*color,color,color, transparency*/
-    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.096);
-    backdrop-filter: blur( 20px);
-    -webkit-backdrop-filter: blur( 20px);
-    border-radius: 10px;
-    /* display: flex; */
-    /* justify-content: left; */
-    text-align: center;
-    margin-inline: 20px;
 }
