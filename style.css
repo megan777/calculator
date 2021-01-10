@@ -49,5 +49,5 @@ li {
 .btn {
     border-radius: var(--base-spacing);
     box-shadow: 1px 1px 1px black;
-    padding: var(--base-spacing);
+    padding: 1rem;
 }
